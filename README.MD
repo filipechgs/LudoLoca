@@ -62,7 +62,7 @@ Conectar pessoas que possuem jogos de tabuleiro ociosos com aquelas que desejam 
    - Pode adicionar a sua opinião a um jogo que ja tenha jogado ou explicar como o jogo funciona
    - A página do jogo exibe uma lista ranqueada de usuários próximos emprestando-o.
 
-## ✨ Funcionalidades
+## ✨ Requisitos funcionais
 
 - 👤 Sistema completo de cadastro e autenticação de usuários
 - 🎲 Catálogo de geral jogos com filtros avançados
@@ -74,9 +74,17 @@ Conectar pessoas que possuem jogos de tabuleiro ociosos com aquelas que desejam 
 - 💬 Chat integrado entre locador e locatário
 - 🔔 Sistema de notificações em tempo real
 - ⭐ Avaliações e reviews de jogos e usuários
-- 📱 Interface responsiva e acessível
 
-## 🛠️ Tecnologias
+## Requisitos não funcionais
+
+- 📱 Interface responsiva e acessível
+- 📱 Mobile e web
+
+## Limitações
+- Deve ter baixo custo de implementação
+- Deve usar tecnologias que a equipe ja tenha familiaridade ou com curva de aprendizagem fácil.
+
+## 🛠️ Tecnologias utilizadas
 
 ### Frontend
 - Flutter (multiplataforma)
