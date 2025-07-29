@@ -39,10 +39,33 @@ Conectar pessoas que possuem jogos de tabuleiro ociosos com aquelas que desejam 
    - Mãe
    - Interessada em jogos educativos para desenvolvimento infantil
 
+### Requisitos do usuário
+
+1. Segurança e confiança nas transações
+   - Nova usuária é criada apenas com a indicação de uma usuária já esistente (sugestão)
+   - Usuária deve ser maior de 18 anos
+   - Cadastrar apenas os dados necessários para viabilizar a transação: nome, email, cpf, idade, cidade, estado
+   - Visualização da árvore de indicação do usuário 
+   - Um usuário pode bloquear o recebimento de mensagens de outro usuário (sugestão)
+   - Ranqueamento dos usuários feito pelas pessoas que negociam com ele
+   - O chat para as transações ocorre através da plataforma do aplicativo (sugestão)
+   - A pessoa é notificada, pelo app mobile, por email, ou por whatsapp, quando algem quer Conversar com ela (sugestão)
+   - O aplicativo não se responsabilisa pelas transações.
+   - Histórico dos jogos que pegou emprestado e dos que emprestou (sugestão)
+   - Quem empresta, tem um inventário dos jogos que possui, com fotos e descrição atualizada do estado de conservação. (sugestão)
+   - Quem pega emprestado tira foto do estado do jogo no momento em que recebeu. (sugestão)
+   - O valor cobrado por emprestimo é transicionado diratamente entre os usuários
+
+2. Busca, cadastro e informações sobre jogos na plataforma
+   - O usuário pode buscar o jogo por nome, tipo, idade, quantidade de jogadores
+   - O usuário pode cadastrar um jogo que não encontrou na plataforma
+   - Pode adicionar a sua opinião a um jogo que ja tenha jogado ou explicar como o jogo funciona
+   - A página do jogo exibe uma lista ranqueada de usuários próximos emprestando-o.
+
 ## ✨ Funcionalidades
 
-- 👤 Sistema completo de cadastro e autenticação
-- 🎲 Catálogo de jogos com filtros avançados
+- 👤 Sistema completo de cadastro e autenticação de usuários
+- 🎲 Catálogo de geral jogos com filtros avançados
   - Categoria
   - Faixa etária
   - Avaliação
@@ -64,7 +87,7 @@ Conectar pessoas que possuem jogos de tabuleiro ociosos com aquelas que desejam 
 ### Backend
 - API RESTful
 - Sistema de autenticação JWT
-- PostgreSQL
+- PostgreSQL (ou bd não relacional?)
 - Websockets para chat em tempo real
 
 ### Outros Serviços
