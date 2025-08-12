@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/base.css">
+
+
+    <!-- web components -->
+    <script src="./scripts/component-auth-form.mjs" type="module"></script>
+
+    <title>LudoLoca</title>
+</head>
+
+<body>
+    <header>
+        <h1>LudoLoca</h1>
+        <nav>
+            <!-- fazer -->
+        </nav>
+    </header>
+
+    <main>
+        <form id="register" class="form-box">
+            <h2 class="form-input-field">Criar conta!</h2>
+            <div class="form-input-field">
+                <label for="name">Nome completo</label>
+                <input type="text" name="name" id="name" placeholder="Nome e sobrenome" required>
+            </div>
+            <div class="form-input-field">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Seu e-mail preferido" required>
+            </div>
+            <div class="form-input-field">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Segredo..." required>
+            </div>
+            <div class="form-input-field">
+                <label for="confirmPassword">Confirmar senha</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Repita o ultimo passo" required>
+            </div>
+            <input type="submit" value="Cadastrar">
+            <p>Já tem uma conta? <a href="#" id="switchForm">Fazer login!</a></p>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

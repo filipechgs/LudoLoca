@@ -7,6 +7,11 @@
 
 **LudoLoca** é um projeto acadêmico desenvolvido durante a disciplina de Projeto Integrador do curso de Análise e Desenvolvimento de Sistemas (SENAC - EAD). Nossa proposta é facilitar o aluguel de jogos de tabuleiro entre usuários, democratizando o acesso ao lazer e incentivando o consumo consciente.
 
+## O que tem neste repositório
+- "/Docs" - Contendo a documentação do projeto
+- "/client" - Contendo a base em html para as views
+- "/client/Rotas.md" - Lista dos endpoints da aplicação
+
 ## 📋 Índice
 
 - [Sobre o Projeto](#-sobre-o-projeto)
