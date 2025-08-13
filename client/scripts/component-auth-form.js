@@ -58,6 +58,8 @@ class AuthForm extends HTMLElement {
         return `
         <form id="register" class="form-box" method="post" action="/criar-conta">
             <h2 class="form-input-field">Criar conta!</h2>
+            <p>Já tem uma conta? <a href="#" id="switchForm">Fazer login!</a></p>
+
             <div class="form-input-field">
                 <label for="name">Nome completo</label>
                 <input type="text" name="name" id="name" placeholder="Nome e sobrenome" required>
@@ -68,7 +70,7 @@ class AuthForm extends HTMLElement {
             </div>
             <div class="form-input-field">
                 <label for="CPF">CPF</label>
-                <input type="tel" name="cpf" id="cpf" placeholder="Código Pessoa Física)" required>
+                <input type="tel" name="cpf" id="cpf" placeholder="Código Pessoa Física" required>
             </div>
             <div class="form-input-field">
                 <label for="cep">CEP</label>
@@ -80,10 +82,117 @@ class AuthForm extends HTMLElement {
             </div>
             <div class="form-input-field">
                 <label for="confirmPassword">Confirmar senha</label>
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Repita o ultimo passo" required>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Repita o ultimo passo"
+                    required>
             </div>
+
+            <hr>
+            <h2>Preferências</h2>
+            <fieldset>
+                <legend>Tipos de Jogos de Mesa</legend>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="rpg" value="rpg">
+                    <label for="rpg">RPG (Role-Playing Game)</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="card-rpg" value="card-rpg">
+                    <label for="card-rpg">RPG de Cartas</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="puzzle" value="puzzle">
+                    <label for="puzzle">Quebra-Cabeça</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="board" value="board">
+                    <label for="board">Trilha/Tabuleiro</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="guessing" value="guessing">
+                    <label for="guessing">Adivinhação</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="strategy" value="strategy">
+                    <label for="strategy">Estratégia</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="cards" value="cards">
+                    <label for="cards">Cartas (Deck Building)</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="dice" value="dice">
+                    <label for="dice">Dados</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="cooperative" value="cooperative">
+                    <label for="cooperative">Cooperativo</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="party" value="party">
+                    <label for="party">Party Games</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="miniatures" value="miniatures">
+                    <label for="miniatures">Miniaturas</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="war" value="war">
+                    <label for="war">Guerra</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="euro" value="euro">
+                    <label for="euro">Eurogames</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="abstract" value="abstract">
+                    <label for="abstract">Abstrato</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="family" value="family">
+                    <label for="family">Família</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="thematic" value="thematic">
+                    <label for="thematic">Temático</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="negotiation" value="negotiation">
+                    <label for="negotiation">Negociação</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="tile" value="tile">
+                    <label for="tile">Colocação de Peças</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="memory" value="memory">
+                    <label for="memory">Memória</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" name="game-types" id="trivia" value="trivia">
+                    <label for="trivia">Trivia/Quiz</label>
+                </div>
+            </fieldset>
+            
             <input type="submit" value="Cadastrar">
-            <p>Já tem uma conta? <a href="#" id="switchForm">Fazer login!</a></p>
         </form>
         `;
     }

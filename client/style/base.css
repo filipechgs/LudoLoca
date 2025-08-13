@@ -7,6 +7,7 @@
     --border-config: 1px solid gray;
     --border-radius: 20px;
     --text-color: black;
+    --box-shadow: 3px 3px 8px gray;
 }
 /* Tags HTML */
 body {
@@ -30,9 +31,8 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 1rem;
     margin-inline: .5rem;
-    min-height: 35rem;
 }
 
 footer {
@@ -63,52 +63,10 @@ input[type="submit"] {
     background-color: white;
     border-color: gray;
     cursor: pointer;
-    box-shadow: 7px 5px 5px lightgray;
+    box-shadow: 3px 3px 8px gray;
 }
 input[type="submit"]:hover {
     color: white;
     background-color: black;
     border-color: black;
-}
-
-/* Login form */
-#login {
-    border: var(--border-config);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 300px;
-}
-/* Form */
-.form-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-.form-input-field {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Register form */
-#register {
-    border: var(--border-config);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 300px;
-}
-
-/* Form links */
-.form-box a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.form-box a:hover {
-    text-decoration: underline;
 }

@@ -7,10 +7,11 @@
 
     <!-- style -->
     <link rel="stylesheet" href="./style/base.css">
-
+    <link rel="stylesheet" href="./style/forms.css">
+    <link rel="stylesheet" href="./style/suggestions.css">
 
     <!-- web components -->
-    <script src="./scripts/component-auth-form.mjs" type="module"></script>
+    <!-- <script src="./scripts/component-auth-form.mjs" type="module"></script> -->
 
     <title>LudoLoca</title>
 </head>
@@ -24,27 +25,74 @@
     </header>
 
     <main>
-        <form id="register" class="form-box">
-            <h2 class="form-input-field">Criar conta!</h2>
-            <div class="form-input-field">
-                <label for="name">Nome completo</label>
-                <input type="text" name="name" id="name" placeholder="Nome e sobrenome" required>
-            </div>
-            <div class="form-input-field">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Seu e-mail preferido" required>
-            </div>
-            <div class="form-input-field">
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Segredo..." required>
-            </div>
-            <div class="form-input-field">
-                <label for="confirmPassword">Confirmar senha</label>
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Repita o ultimo passo" required>
-            </div>
-            <input type="submit" value="Cadastrar">
-            <p>Já tem uma conta? <a href="#" id="switchForm">Fazer login!</a></p>
-        </form>
+        <div class="main-content">
+            <form action="" method="post">
+                <input type="search" name="find" id="find" placeholder="Buscar jogo">
+                <input type="submit" value="Buscar!">
+            </form>
+
+            <h2>Sugestões</h2>
+            <section id="suggestions-box">
+
+                <div class="suggestion">
+                    <p>Nome do jogo</p>
+                    <img src="" alt="Imagem do jogo">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                </div>
+
+                <div class="suggestion">
+                    <p>Nome do jogo</p>
+                    <img src="" alt="Imagem do jogo">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                </div>
+
+                <div class="suggestion">
+                    <p>Nome do jogo</p>
+                    <img src="" alt="Imagem do jogo">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                </div>
+
+                <div class="suggestion">
+                    <p>Nome do jogo</p>
+                    <img src="" alt="Imagem do jogo">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                </div>
+
+            </section>
+
+            <h2>Descoberta!</h2>
+
+            <section id="suggestions-box">
+
+                <div class="suggestion">
+                    <p>Nome do jogo</p>
+                    <img src="" alt="Imagem do jogo">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                </div>
+
+                <div class="suggestion">
+                    <p>Nome do jogo</p>
+                    <img src="" alt="Imagem do jogo">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                </div>
+
+                <div class="suggestion">
+                    <p>Nome do jogo</p>
+                    <img src="" alt="Imagem do jogo">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                </div>
+
+                <div class="suggestion">
+                    <p>Nome do jogo</p>
+                    <img src="" alt="Imagem do jogo">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                </div>
+
+            </section>
+        </div>
+
+
+        <a href="" id="more-options">+</a>
     </main>
 
     <footer>
